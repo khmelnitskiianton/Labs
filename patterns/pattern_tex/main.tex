@@ -18,7 +18,7 @@
 
 \usepackage[x11names]{xcolor}
 
-\usepackage{amsmath} % math packages
+\usepackage{amsmath} %% math packages
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -28,7 +28,6 @@
 \usepackage{uniquecounter}
 \usepackage{placeins}
 \usepackage[italicdiff]{physics}
-
 \usepackage{multirow}
 
 \usepackage{hyperref} % links in document
@@ -41,10 +40,13 @@
     pdfpagemode=FullScreen,
 }
 
-\usepackage{import} %inkspace images
+\usepackage{import} %%inkspace images
 \usepackage{xifthen}
 \usepackage{pdfpages}
 \usepackage{transparent}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{type1cm}
 
 \usepackage{caption}
 \captionsetup[figure]{name=Рисунок}
@@ -52,24 +54,11 @@
 
 \usepackage{fancyhdr}
 
-\usepackage{biblatex} %Imports biblatex package
-\addbibresource{src.bib} %Import the bibliography file
-
-\include{watermark.tex}
-
 \begin{document}
 
     \include{title.tex}
 
-    \renewcommand\contentsname{
-    \bfseries
-    {\Huge Оглавление}
-    }
-    \tableofcontents
-    \newpage
 
     \include{body.tex}
-
-    \printbibliography[title={Источники}] %Prints bibliography
 
 \end{document}
